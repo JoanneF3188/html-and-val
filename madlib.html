@@ -10,11 +10,14 @@
       
       $('button').click(function(){
         // get the inputs from the user
+        var adj = $('#adj').val();
+        var noun = $('#noun').val();
         
         var story = "There once was a " +
                     adj + " hobbit named " + name + ". " + 
                     name + " liked to eat " + color2 +" " + noun + ".";
         
+        $('p').html(story);
         
         // and make the story appear on the screen
         // set the color of the story to color1
